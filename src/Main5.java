@@ -20,6 +20,13 @@ public class Main5 {
         return setarr;
     }
 
+    static void displayArr(int arr[]) {
+        System.out.println("\nElement in araay:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + "\t");
+        }
+    }
+
     static int[] min(int arr[]) {
         int result[] = new int[2];
         int min = arr[0];
