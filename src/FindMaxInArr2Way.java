@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class FindMaxInArr2Way {
     public static void main(String[] args) {
-        int arr[][] = set2wayArr();
+        int arr[][] = set2wayArrSquare();
         display2wayarr(arr);
         System.out.printf("\nmax Value of array is:\t%d", findMaxInArr2Way(arr));
     }
@@ -34,6 +34,21 @@ public class FindMaxInArr2Way {
         }
         return arr;
     }
+    static int[][] set2wayArrSquare() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input length of array");
+        int length = input.nextInt();
+        System.out.println("Input width of array");
+        int width = input.nextInt();
+        int arr[][]=new int[length][width];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < width; j++) {
+                arr[i][j] = (int) Math.round(Math.random() * 100);
+            }
+        }
+        return arr;
+    }
+
     static void display2wayarr(int arr[][]){
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
