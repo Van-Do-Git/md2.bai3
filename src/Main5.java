@@ -9,7 +9,7 @@ public class Main5 {
     static int[] getArr() {
         int size;
         Scanner input = new Scanner(System.in);
-        System.out.println("Input size your array");
+        System.out.println("\nInput size your array");
         size = input.nextInt();
         int setarr[] = new int[size];
         System.out.println("Element in araay:");
